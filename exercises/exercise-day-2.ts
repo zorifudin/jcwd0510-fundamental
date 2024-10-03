@@ -57,4 +57,5 @@ for (let i = 2; i <= n; i++) {
   bb = c;
   console.log(c);
   console.log(i);
+  console.log(i);
 }
