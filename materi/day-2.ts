@@ -113,8 +113,8 @@ for (let i = 0; i < 5; i++) {
 }
 
 // for loop nested
-for (let i = 0; i < 5; i++) {
-  for (let j = 0; j < 6; j++) {
+for (let i = 0; i < 2; i++) {
+  for (let j = 0; j < 3; j++) {
     console.log("hello world");
   }
 }
@@ -123,7 +123,7 @@ for (let i = 0; i < 5; i++) {
 
 let i: number = 1;
 
-while (i < 10) {
+while (i <= 5) {
   console.log("hello world");
   i++;
 }
@@ -135,7 +135,7 @@ let count: number = 1;
 do {
   console.log("ini literasi ke : " + count);
   count++;
-} while (count <= 5);
+} while (count <= 0);
 
 // ========== BREAK -> untuk menghentikan sebuah loop
 
@@ -153,10 +153,9 @@ while (true) {
 
 // ========== CONTINUE -> melakukan skip pada looping
 
-for (let i = 0; i < 5; i++) {
-  if (i === 3) {
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 === 0) {
     continue;
   }
-
-  console.log(i);
+  console.log(`perulangan ganjil ${i}`);
 }

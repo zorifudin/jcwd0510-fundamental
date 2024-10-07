@@ -68,9 +68,8 @@ function square(number: number) {
 }
 
 const result = square(4); // didalam kurung namanya argumen, konek ke parameter
-const result2 = square(10);
-
 console.log(result);
+const result2 = square(10);
 console.log(result2);
 
 // 2. function expression
@@ -79,9 +78,8 @@ const square1 = function (number: number) {
 };
 
 const result3 = square1(4);
-const result4 = square1(10);
-
 console.log(result3);
+const result4 = square1(10);
 console.log(result4);
 
 // FUNCTION SCOPE -> variable yang di define didalam function hanya bisa diakses didalam function tersebut
@@ -92,7 +90,7 @@ console.log(result4);
 //   return hello;
 // }
 
-// // console.log(hello); tidak dapat berjalan diluar function itu
+// console.log(hello); tidak dapat berjalan diluar function itu
 
 // greeting();
 
@@ -126,13 +124,15 @@ console.log(multiply());
 
 // ========== REST PARAMETER -> mewakili sisa argument kedalam 1 variable
 
-function myFunc(a: number, b: number, ...manyMoreArgs: number[]) {
-  console.log(a);
-  console.log(b);
-  console.log(manyMoreArgs);
-} // untuk manyMoreArgs jika ingin melakukan return itu harus dikalkulasi dulu dengan perintah for atau apapun itu
+function myFunc(items: string, ...data1: number[]) {
+  let total1 = 0;
+  for (const item of data1) {
+    total1 += item;
+  }
+  console.log(`Total ${items} is ${total1}`);
+} // untuk data1 jika ingin melakukan return itu harus dikalkulasi dulu dengan perintah for atau apapun itu
 
-myFunc(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+myFunc("buah", 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
 // ========== NESTED FUNCTION -> fungsi yang berada didalam fungsi
 
