@@ -26,15 +26,28 @@ if (pembagi == 2) {
 }
 
 // No 3
-const find = 3;
-let sum = 0,
-  i = 1;
-while (i <= find) {
+// CARA 1
+const number: number = 5;
+const result: number = (number * (number + 1)) / 2;
+console.log(result);
+
+// CARA 2
+const angka1: number = 5;
+let sum: number = 0;
+let message: string = "";
+
+for (let i = 1; i <= angka1; i++) {
   sum += i;
-  i++;
+
+  if (i === angka1) {
+    message += i + " ";
+  } else {
+    message += i + " + ";
+  }
 }
 
-console.log("The sum of natural numbers: " + sum);
+console.log(sum);
+console.log(`${message} = ${sum}`);
 
 // No 4
 let faktorial = 6;

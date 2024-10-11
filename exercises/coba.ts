@@ -56,36 +56,46 @@ const differenceOfdate1 = differenceOfdate / (1000 * 3600 * 24);
 console.log(differenceOfdate1);
 
 // No 1 meeting 2
-const checkNumber: number = 4;
+const checkNumber: number = 25;
 
-if (checkNumber % 2 === 0) {
-  console.log(`${checkNumber} is even`);
+if (checkNumber % 2 == 0) {
+  console.log(`${checkNumber} is even number`);
 } else {
-  console.log(`${checkNumber} is odd`);
+  console.log(`${checkNumber} is odd number`);
 }
 
 // No 2 meeting 2
-const prima1: number = 9;
-let divisor: number = 0;
+const prima: number = 9;
+let pembagi: number = 0;
 
-for (let i = 1; i <= prima1; i++) {
-  if (prima1 % i == 0) {
-    divisor++;
+for (let i = 1; i <= prima; i++) {
+  if (prima % i == 0) {
+    pembagi++;
   }
-  console.log(i);
-  console.log(divisor);
 }
 
-if (divisor == 2) {
-  console.log(`${prima1} is prime`);
+if (pembagi == 2) {
+  console.log(`${prima} is prime`);
 } else {
-  console.log(`${prima1} is not prime`);
+  console.log(`${prima} is not prime`);
+}
+// No 3 meeting 2
+const number1: number = 5;
+let sum: number = 0;
+let message: string = "";
+
+for (let i = 1; i <= number1; i++) {
+  sum += i;
+
+  if (i === number1) {
+    message += i + " ";
+  } else {
+    message += i + " + ";
+  }
 }
 
-// No 3 meeting 2
-let findNumberN: number = 5;
-const resultFindNumberN: number = (findNumberN * (findNumberN + 1)) / 2;
-console.log(resultFindNumberN);
+console.log(sum);
+console.log(` ${number1} is ${message} = ${sum}`);
 
 // No 4 meeting 2
 
